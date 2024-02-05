@@ -38,7 +38,15 @@ Replace ~/.local/bin/multiqc with the exact filepath:
 python ~/.local/bin/multiqc ./
 ``` 
 
-4. Copy the .html report over to your local directory with `scp` or push to Github from Hoffman. open report.html in a browser. For help interpreting multiqc results, : 
+4. Copy the .html report over to your local directory with `scp` or push to Github from Hoffman. open report.html in a browser. For help interpreting multiqc results, see the following resoureces:
+
+5. Trim adapters and low-quality reads with Trimmomatic. Since we already have trimmomatic installed in the kneaddata env, we are going to activate the kneaddata env:
+```bash
+conda activate kneaddata
+```
+```bash
+trimmomatic PE JJ1715_393_S43_R1_001.fastq.gz JJ1715_393_S43_R2_001.fastq.gz output_forward_paired.fq.gz output_forward_unpaired.fq.gz output_reverse_paired.fq.gz output_reverse_unpaired.fq.gz ILLUMINACLIP:/u/home/j/jpjacobs/project-jpjacobs/software_rna_seq/Trimmomatic/trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:2:True LEADING:3 TRAILING:3 MINLEN:36
+```
 
 ## References: 
 https://bookdown.org/jean_souza/PreProcSEQ/quality-control.html#fastqc-1 
