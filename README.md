@@ -8,3 +8,6 @@ After you log in to Hoffman2 and request a computational node:
 ```bash
 conda create -n fastqc fastqc
 ```
+
+## References: 
+https://bookdown.org/jean_souza/PreProcSEQ/quality-control.html#fastqc-1 
