@@ -50,3 +50,4 @@ trimmomatic PE JJ1715_393_S43_R1_001.fastq.gz JJ1715_393_S43_R2_001.fastq.gz out
 
 ## References: 
 https://bookdown.org/jean_souza/PreProcSEQ/quality-control.html#fastqc-1 
+https://github.com/hbctraining/Intro-to-rnaseq-hpc-gt/blob/master/lessons/08_rnaseq_workflow.md
