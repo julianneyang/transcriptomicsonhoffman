@@ -15,13 +15,27 @@ conda create -n fastqc fastqc
 conda activate fastqc
 ```
 
-2. Run FastQC on your file (I will later edit this to become a job submission script) :
+2. Inside a directory with the raw data files, run FastQC. 
+
+Interactive: creates directory called `FastQC_output` and stores fastqc reports in that directory
 ```bash
-mkdir 1_QC_output/
-fastqc *.fastq.gz -o 1_QC_output/
+mkdir FastQC_output/
+fastqc *.fastq.gz -o FastQC_output/
 ```
 
+Job submission (recommended). Note, you may need to provide the full filepath to 1-FastQC.sh
+```bash
+qsub ../rna_scripts/1-FastQC.sh
+```
+
+
 3. Aggregate quality reports for all samples by using multiQC (note: for some reason I had issues with forcing multiqc to use python 3.10 so I had to use the below workaround. MultiQC takes as input a directory full of report.html files.
+
+Create a new conda environment and deactivate the old: 
+```bash
+conda deactivate
+conda create -n multiqc
+```
 
 For downloading MultiQC, do not use conda, it downloads an outdated version. Instead I used pip to install the development version, and I also forced installed to $PROJECT which has enough space as opposed to the default $HOME installation
 
@@ -32,11 +46,15 @@ You may need to find the exact filepath to multiqc via the following command:
 ```bash
 which multiqc
 ```
-Replace ~/.local/bin/multiqc with the exact filepath:
-
+To run interactively, Replace ~/.local/bin/multiqc with the exact filepath:
 ```bash
 python ~/.local/bin/multiqc ./
 ``` 
+Job submission (recommended). Do this within the directory where your outputs from FastQC are located.
+```bash
+cd FastQC_outpu
+qsub 2-multiqc.sh
+```
 
 4. Copy the .html report over to your local directory with `scp` or push to Github from Hoffman. open report.html in a browser. For help interpreting multiqc results, see the following resoureces:
 
