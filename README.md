@@ -52,7 +52,7 @@ python ~/.local/bin/multiqc ./
 ``` 
 Job submission (recommended). Do this within the directory where your outputs from FastQC are located.
 ```bash
-cd FastQC_outpu
+cd FastQC_output
 qsub 2-multiqc.sh
 ```
 
