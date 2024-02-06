@@ -59,18 +59,15 @@ tar xzvf salmon-1.10.0_linux_x86_64.tar.gz
 
 7. Use salmon to index a mouse genome
 
-Download genome file (in case you want to make a decoy file later to help deter misalignments: 
+Download transcriptome file (I tried gencode first but had a lot of warnings, so I switched to ensembl): 
 ```bash
-wget http://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/latest_release/GRCm39.genome.fa.gz
-```
+wget http://ftp.ensembl.org/pub/release-111/fasta/mus_musculus_c57bl6nj/cdna/Mus_musculus_c57bl6nj.C57BL_6NJ_v1.cdna.all.fa.gz
 
-Download transcriptome file: 
-```bash
-wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/latest_release/gencode.vM34.transcripts.fa.gz
 ```
-
 Index transcriptome file: 
 ```bash
+bin/salmon index -t Mus_musculus_c57bl6nj.C57BL_6NJ_v1.cdna.all.fa.gz -i Mus_musculus_c57bl6nj_index -p 8
+
 ```
 
 
@@ -79,3 +76,4 @@ https://bookdown.org/jean_souza/PreProcSEQ/quality-control.html#fastqc-1
 https://github.com/hbctraining/Intro-to-rnaseq-hpc-gt/blob/master/lessons/08_rnaseq_workflow.md
 Documentation for Trimmomatic: https://github.com/usadellab/Trimmomatic 
 Documentation for Salmon: https://combine-lab.github.io/salmon/getting_started/
+Making a decoys.txt file: https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2021/RNAseq/Markdowns/05_Quantification_with_Salmon_practical.html
