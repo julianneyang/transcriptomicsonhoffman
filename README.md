@@ -66,6 +66,7 @@ wget http://ftp.ensembl.org/pub/release-111/fasta/mus_musculus_c57bl6nj/cdna/Mus
 ```
 Index transcriptome file: 
 ```bash
+/u/home/j/jpjacobs/project-jpjacobs/software_rna_seq/salmon/salmon-latest_linux_x86_64
 bin/salmon index -t Mus_musculus_c57bl6nj.C57BL_6NJ_v1.cdna.all.fa.gz -i Mus_musculus_c57bl6nj_index -p 8
 
 ```
