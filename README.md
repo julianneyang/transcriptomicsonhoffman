@@ -79,12 +79,16 @@ tar xzvf salmon-1.10.0_linux_x86_64.tar.gz
 
 7. Use salmon to index a mouse genome
 
-Download transcriptome file (I tried gencode first but had a lot of warnings, so I switched to ensembl): 
+Download transcriptome file (I tried gencode first but had a lot of warnings, so I switched to ensembl). Note I've provided these for you in this repo: 
 ```bash
 wget http://ftp.ensembl.org/pub/release-111/fasta/mus_musculus_c57bl6nj/cdna/Mus_musculus_c57bl6nj.C57BL_6NJ_v1.cdna.all.fa.gz
-
 ```
-Index transcriptome file: 
+
+Download annotation file. Note I've provided this in the repo: 
+```bash
+http://ftp.ensembl.org/pub/release-111/gtf/mus_musculus_c57bl6nj/Mus_musculus_c57bl6nj.C57BL_6NJ_v1.111.gtf.gz
+```
+Index transcriptome file. Note, I've provided it in this repo but feel free to build your own or update as new releases come out: 
 ```bash
 /u/home/j/jpjacobs/project-jpjacobs/software_rna_seq/salmon/salmon-latest_linux_x86_64
 bin/salmon index -t Mus_musculus_c57bl6nj.C57BL_6NJ_v1.cdna.all.fa.gz -i Mus_musculus_c57bl6nj_index -p 8
@@ -104,7 +108,7 @@ for f in *R1_001.fastq_paired.fq.gz; do name=$(basename $f R1_001.fastq_paired.f
 
 
 ## Generating a count matrix 
-9. Follow instructions in tximport.R and txmeta.R to generate TPM/ count matrices and gene-level annotations
+9. Follow instructions in `tximport.R` and `txmeta.R` to generate TPM/ count matrices and gene-level annotations. 
 
 
 ## References: 
