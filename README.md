@@ -44,11 +44,13 @@ python ~/.local/bin/multiqc ./
 ```bash
 conda activate kneaddata
 ```
+Interactive:
 ```bash
 trimmomatic PE JJ1715_393_S43_R1_001.fastq.gz JJ1715_393_S43_R2_001.fastq.gz output_forward_paired.fq.gz output_forward_unpaired.fq.gz output_reverse_paired.fq.gz output_reverse_unpaired.fq.gz ILLUMINACLIP:/u/home/j/jpjacobs/project-jpjacobs/software_rna_seq/Trimmomatic/trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:2:True LEADING:3 TRAILING:3 MINLEN:36
 ```
+Job submission for many files (assumes you are in the directory where your raw fastQ files are located). You may need to change the filepath to point to run_trimmomatic.sh
 ```bash
-java -jar /u/home/j/jpjacobs/project-jpjacobs/software_rna_seq/Trimmomatic/trimmomatic-0.39/dist/jar/trimmomatic-0.39.jar PE JJ1715_394_S44_R2_001.fastq.gz JJ1715_394_S44_R2_001.fastq.gz output_forward_paired.fq.gz output_forward_unpaired.fq.gz output_reverse_paired.fq.gz output_reverse_unpaired.fq.gz ILLUMINACLIP:/u/home/j/jpjacobs/project-jpjacobs/software_rna_seq/Trimmomatic/trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:2:True LEADING:3 TRAILING:3 MINLEN:36
+for f in *R1_001.fastq.gz; do name=$(basename $f R1_001.fastq.gz); qsub ../rna_scripts/run_trimmomatic.sh ${name}R1_001.fastq.gz ${name}R2_001.fastq.gz; done
 ```
 
 6. Install salmon (I downloaded the salmon-1.10.0_linux_x86_64.tar.gz to the `software_rna_seq` folder, then I unpacked it with tar)
