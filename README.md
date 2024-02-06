@@ -68,7 +68,7 @@ trimmomatic PE JJ1715_393_S43_R1_001.fastq.gz JJ1715_393_S43_R2_001.fastq.gz out
 ```
 Job submission for many files (assumes you are in the directory where your raw fastQ files are located). You may need to change the filepath to point to run_trimmomatic.sh
 ```bash
-for f in *R1_001.fastq.gz; do name=$(basename $f R1_001.fastq.gz); qsub ../rna_scripts/run_trimmomatic.sh ${name}R1_001.fastq.gz ${name}R2_001.fastq.gz; done
+for f in *R1_001.fastq.gz; do name=$(basename $f R1_001.fastq.gz); qsub ../../../software_rna_seq/rna_scripts/3-trimmomatic.sh ${name}R1_001.fastq.gz ${name}R2_001.fastq.gz; done
 ```
 
 6. Install salmon (I downloaded the salmon-1.10.0_linux_x86_64.tar.gz to the `software_rna_seq` folder, then I unpacked it with tar)
