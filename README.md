@@ -96,6 +96,13 @@ bin/salmon index -t Mus_musculus_c57bl6nj.C57BL_6NJ_v1.cdna.all.fa.gz -i Mus_mus
 ../salmon/salmon-latest_linux_x86_64/bin/salmon quant -i ../salmon/salmon-latest_linux_x86_64/Mus_musculus_c57bl6nj_index -l A -1 output_JJ1715_393_S43_R1_001.fastq_paired.fq.gz -2 output_JJ1715_393_S43_R2_001.fastq_paired.fq.gz -p 8 --gcBias --validateMappings -o JJ1715_393_quant
 ```
 
+Job submission (Recommended)
+```bash
+for f in *R1_001.fastq_paired.fq.gz; do name=$(basename $f R1_001.fastq_paired.fq.gz); qsub ../rna_scripts/salmon.sh ${name}R1_001.fastq_paired.fq.gz ${name}R2_001.fastq_paired.fq.gz; done
+```
+
+
+
 ## Generating a count matrix 
 
 
