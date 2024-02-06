@@ -27,7 +27,7 @@ conda activate fastqc
 
 echo "this script assumes you are in a directory with the raw fastq files"
 mkdir FastQC_output
-fastqc *.fastq.gz -o FastQC_output/
+fastqc *.fastq.gz -o FastQC_output/ -t 20
 
 # echo job info on joblog:
 echo "Job $JOB_ID ended on:   " `hostname -s`
