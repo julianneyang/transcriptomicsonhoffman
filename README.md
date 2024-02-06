@@ -71,6 +71,14 @@ bin/salmon index -t Mus_musculus_c57bl6nj.C57BL_6NJ_v1.cdna.all.fa.gz -i Mus_mus
 
 ```
 
+8. Run salmon on trimmed fastq files: 
+```bash
+../salmon/salmon-latest_linux_x86_64/bin/salmon quant -i ../salmon/salmon-latest_linux_x86_64/Mus_musculus_c57bl6nj_index -l A -1 output_JJ1715_393_S43_R1_001.fastq_paired.fq.gz -2 output_JJ1715_393_S43_R2_001.fastq_paired.fq.gz -p 8 --gcBias --validateMappings -o JJ1715_393_quant
+```
+
+## Generating a count matrix 
+
+
 
 ## References: 
 https://bookdown.org/jean_souza/PreProcSEQ/quality-control.html#fastqc-1 
