@@ -51,6 +51,15 @@ trimmomatic PE JJ1715_393_S43_R1_001.fastq.gz JJ1715_393_S43_R2_001.fastq.gz out
 java -jar /u/home/j/jpjacobs/project-jpjacobs/software_rna_seq/Trimmomatic/trimmomatic-0.39/dist/jar/trimmomatic-0.39.jar PE JJ1715_394_S44_R2_001.fastq.gz JJ1715_394_S44_R2_001.fastq.gz output_forward_paired.fq.gz output_forward_unpaired.fq.gz output_reverse_paired.fq.gz output_reverse_unpaired.fq.gz ILLUMINACLIP:/u/home/j/jpjacobs/project-jpjacobs/software_rna_seq/Trimmomatic/trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:2:True LEADING:3 TRAILING:3 MINLEN:36
 ```
 
+6. Install salmon (I downloaded the salmon-1.10.0_linux_x86_64.tar.gz to the `software_rna_seq` folder, then I unpacked it)
+https://github.com/COMBINE-lab/salmon/releases
+```bash
+tar xzvf salmon-1.10.0_linux_x86_64.tar.gz
+```
+
+7. Use salmon to index a mouse genome 
+
+
 ## References: 
 https://bookdown.org/jean_souza/PreProcSEQ/quality-control.html#fastqc-1 
 https://github.com/hbctraining/Intro-to-rnaseq-hpc-gt/blob/master/lessons/08_rnaseq_workflow.md
