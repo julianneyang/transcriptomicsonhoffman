@@ -104,7 +104,7 @@ for f in *R1_001.fastq_paired.fq.gz; do name=$(basename $f R1_001.fastq_paired.f
 
 
 ## Generating a count matrix 
-
+9. Follow instructions in tximport.R and txmeta.R to generate TPM/ count matrices and gene-level annotations
 
 
 ## References: 
