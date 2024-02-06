@@ -81,8 +81,8 @@ bin/salmon index -t Mus_musculus_c57bl6nj.C57BL_6NJ_v1.cdna.all.fa.gz -i Mus_mus
 
 
 ## References: 
-https://bookdown.org/jean_souza/PreProcSEQ/quality-control.html#fastqc-1 
-https://github.com/hbctraining/Intro-to-rnaseq-hpc-gt/blob/master/lessons/08_rnaseq_workflow.md
-Documentation for Trimmomatic: https://github.com/usadellab/Trimmomatic 
-Documentation for Salmon: https://combine-lab.github.io/salmon/getting_started/
-Making a decoys.txt file: https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2021/RNAseq/Markdowns/05_Quantification_with_Salmon_practical.html
+- Walkthrough of an entire preprocessing workflow: https://bookdown.org/jean_souza/PreProcSEQ/quality-control.html#fastqc-1 
+- Walkthrough of an entire preprocessing workflow: https://github.com/hbctraining/Intro-to-rnaseq-hpc-gt/blob/master/lessons/08_rnaseq_workflow.md
+- Documentation for Trimmomatic: https://github.com/usadellab/Trimmomatic 
+- Documentation for Salmon: https://combine-lab.github.io/salmon/getting_started/
+- Making a decoys.txt file: https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2021/RNAseq/Markdowns/05_Quantification_with_Salmon_practical.html
