@@ -63,3 +63,5 @@ tar xzvf salmon-1.10.0_linux_x86_64.tar.gz
 ## References: 
 https://bookdown.org/jean_souza/PreProcSEQ/quality-control.html#fastqc-1 
 https://github.com/hbctraining/Intro-to-rnaseq-hpc-gt/blob/master/lessons/08_rnaseq_workflow.md
+Documentation for Trimmomatic: https://github.com/usadellab/Trimmomatic 
+Documentation for Salmon: https://combine-lab.github.io/salmon/getting_started/
