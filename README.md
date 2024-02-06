@@ -25,7 +25,7 @@ fastqc *.fastq.gz -o FastQC_output/
 
 Job submission (recommended). Note, you may need to provide the full filepath to 1-FastQC.sh
 ```bash
-qsub ../rna_scripts/1-FastQC.sh
+qsub ../rna_scripts/FastQC.sh
 ```
 
 
@@ -53,12 +53,12 @@ python ~/.local/bin/multiqc ./
 Job submission (recommended). Do this within the directory where your outputs from FastQC are located.
 ```bash
 cd FastQC_output
-qsub 2-multiqc.sh
+qsub multiqc.sh
 ```
 
 4. Copy the .html report over to your local directory with `scp` or push to Github from Hoffman. open report.html in a browser. For help interpreting multiqc results, see the following resoureces:
 
-5. Trim adapters and low-quality reads with Trimmomatic. Since we already have trimmomatic installed in the kneaddata env, we are going to activate the kneaddata env:
+5. Trim adapters and low-quality reads with Trimmomatic. Since we already have trimmomatic installed in the kneaddata env, we are going to activate the kneaddata env. Note that you can append additional parameters for Trimmomatic; the command embedded in `trimmomatic.sh` has very gentle trimming parameters and removes adapters assuming Illumina Hiseq was the sequencer.
 ```bash
 conda activate kneaddata
 ```
