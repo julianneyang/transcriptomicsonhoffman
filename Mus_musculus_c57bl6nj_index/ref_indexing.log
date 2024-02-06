@@ -1,0 +1,64 @@
+[2024-02-06 10:07:18.846] [puff::index::jointLog] [info] Running fixFasta
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0002636.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0002637.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0002640.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0002638.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0002639.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000032.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000026.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000037.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000028.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000027.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000038.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000034.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000035.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000036.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000031.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000025.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000033.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000039.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.872] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000029.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:18.873] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000030.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:20.795] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0067072.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:22.630] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0090968.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:23.345] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0002724.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:23.386] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0012145.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:23.418] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0015429.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:23.442] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000040.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:23.442] [puff::index::jointLog] [warning] Entry with header [MGP_C57BL6NJ_T0000041.1], had length less than equal to the k-mer length of 31 (perhaps after poly-A clipping)
+[2024-02-06 10:07:23.471] [puff::index::jointLog] [warning] Removed 57 transcripts that were sequence duplicates of indexed transcripts.
+[2024-02-06 10:07:23.471] [puff::index::jointLog] [warning] If you wish to retain duplicate transcripts, please use the `--keepDuplicates` flag
+[2024-02-06 10:07:23.476] [puff::index::jointLog] [info] Replaced 263,036 non-ATCG nucleotides
+[2024-02-06 10:07:23.476] [puff::index::jointLog] [info] Clipped poly-A tails from 416 transcripts
+[2024-02-06 10:07:25.369] [puff::index::jointLog] [info] Filter size not provided; estimating from number of distinct k-mers
+[2024-02-06 10:07:26.999] [puff::index::jointLog] [info] ntHll estimated 82921168 distinct k-mers, setting filter size to 2^31
+[2024-02-06 10:08:00.132] [puff::index::jointLog] [info] Starting the Pufferfish indexing by reading the GFA binary file.
+[2024-02-06 10:08:00.132] [puff::index::jointLog] [info] Setting the index/BinaryGfa directory Mus_musculus_c57bl6nj_index
+[2024-02-06 10:08:00.396] [puff::index::jointLog] [info] Done wrapping the rank vector with a rank9sel structure.
+[2024-02-06 10:08:00.400] [puff::index::jointLog] [info] contig count for validation: 432,393
+[2024-02-06 10:08:00.532] [puff::index::jointLog] [info] Total # of Contigs : 432,393
+[2024-02-06 10:08:00.532] [puff::index::jointLog] [info] Total # of numerical Contigs : 432,393
+[2024-02-06 10:08:00.558] [puff::index::jointLog] [info] Total # of contig vec entries: 1,448,363
+[2024-02-06 10:08:00.558] [puff::index::jointLog] [info] bits per offset entry 21
+[2024-02-06 10:08:00.606] [puff::index::jointLog] [info] Done constructing the contig vector. 432394
+[2024-02-06 10:08:00.816] [puff::index::jointLog] [info] # segments = 432,393
+[2024-02-06 10:08:00.816] [puff::index::jointLog] [info] total length = 96,016,873
+[2024-02-06 10:08:00.854] [puff::index::jointLog] [info] Reading the reference files ...
+[2024-02-06 10:08:01.696] [puff::index::jointLog] [info] positional integer width = 27
+[2024-02-06 10:08:01.696] [puff::index::jointLog] [info] seqSize = 96,016,873
+[2024-02-06 10:08:01.696] [puff::index::jointLog] [info] rankSize = 96,016,873
+[2024-02-06 10:08:01.696] [puff::index::jointLog] [info] edgeVecSize = 0
+[2024-02-06 10:08:01.696] [puff::index::jointLog] [info] num keys = 83,045,083
+[2024-02-06 10:08:07.785] [puff::index::jointLog] [info] mphf size = 51.8722 MB
+[2024-02-06 10:08:07.968] [puff::index::jointLog] [info] chunk size = 12,002,110
+[2024-02-06 10:08:07.968] [puff::index::jointLog] [info] chunk 0 = [0, 12,002,110)
+[2024-02-06 10:08:07.968] [puff::index::jointLog] [info] chunk 1 = [12,002,110, 24,004,220)
+[2024-02-06 10:08:07.968] [puff::index::jointLog] [info] chunk 2 = [24,004,220, 36,006,330)
+[2024-02-06 10:08:07.968] [puff::index::jointLog] [info] chunk 3 = [36,006,330, 48,008,440)
+[2024-02-06 10:08:07.968] [puff::index::jointLog] [info] chunk 4 = [48,008,440, 60,010,550)
+[2024-02-06 10:08:07.968] [puff::index::jointLog] [info] chunk 5 = [60,010,550, 72,012,664)
+[2024-02-06 10:08:07.971] [puff::index::jointLog] [info] chunk 6 = [72,012,664, 84,014,774)
+[2024-02-06 10:08:07.971] [puff::index::jointLog] [info] chunk 7 = [84,014,774, 96,016,843)
+[2024-02-06 10:08:10.677] [puff::index::jointLog] [info] finished populating pos vector
+[2024-02-06 10:08:10.677] [puff::index::jointLog] [info] writing index components
+[2024-02-06 10:08:13.786] [puff::index::jointLog] [info] finished writing dense pufferfish index
