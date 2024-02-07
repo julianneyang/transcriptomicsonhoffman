@@ -108,12 +108,13 @@ for f in *R1_001.fastq_paired.fq.gz; do name=$(basename $f R1_001.fastq_paired.f
 
 
 ## Generating a count matrix 
-9. Follow instructions in `tximport.R` and `txmeta.R` to generate TPM/ count matrices and gene-level annotations. 
+9. Follow instructions in `tximport.R` and `txmeta.R` to generate TPM/ count matrices and gene-level annotations.
 
 
 ## References: 
 - Walkthrough of an entire preprocessing workflow: https://bookdown.org/jean_souza/PreProcSEQ/quality-control.html#fastqc-1 
 - Walkthrough of an entire preprocessing workflow: https://github.com/hbctraining/Intro-to-rnaseq-hpc-gt/blob/master/lessons/08_rnaseq_workflow.md
+- Walkthrough: https://h3abionet.github.io/H3ABionet-SOPs/RNA-Seq
 - Documentation for Trimmomatic: https://github.com/usadellab/Trimmomatic 
 - Documentation for Salmon: https://combine-lab.github.io/salmon/getting_started/
 - Making a decoys.txt file: https://bioinformatics-core-shared-training.github.io/cruk-summer-school-2021/RNAseq/Markdowns/05_Quantification_with_Salmon_practical.html
